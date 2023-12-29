@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veiw Page</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+
+</head>
+<body>
+        <div>
+            <h1>First name</h1>{{data.first_name}}
+            <h1>Last_name</h1>{{data.last_name}}
+            <h1>Position</h1>{{data.position}}
+            <h1>Salary</h1>{{data.salary}}
+            <h1>Hire date</h1>{{data.hire_date}}
+            <h1>Department</h1>{{data.department}}
+            <h1>Email</h1>{{data.email}}
+        </div>
+        <a href="{% url 'details' %}">Back</a>
+        
+</body>
+</html>

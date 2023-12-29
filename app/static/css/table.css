@@ -1,0 +1,41 @@
+/* Apply basic styling to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style table header */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Style table cells */
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style alternating rows with a background color */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style links in the table */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 5vw;
+    height: 5vh;
+    border-radius: 10px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details</title>
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+
+</head>
+<body>
+    <table>
+        <tr>
+        <th>Eid</th>
+        <th>Ename</th>
+        <th>H.Date</th>
+        <th>View</th>
+        <th>Update</th>
+        <th>Delete</tr>
+        </tr>
+        
+            {% for i in data %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.last_name}}</td>   
+                <td>{{i.hire_date}}</td>
+                <td><a href="{% url 'view' vid=i.id%}">View</a></td>
+                <td><a href="{% url 'update' uid=i.id%}">Update</a></td>
+                <td><a href="{% url 'delete' did=i.id%}">Delete</a></td>
+
+            </tr>
+            {% endfor %}
+    </table>
+    <a href="{% url 'insert' %}">Insert</a>
+
+</body>
+</html>

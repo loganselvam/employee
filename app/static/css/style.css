@@ -1,0 +1,43 @@
+/* styles.css */
+
+body{
+    background-color: gray;
+}
+/* Apply some basic styling to the form container */
+.employee-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.employee-form a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Style form fields */
+.employee-form input,
+.employee-form select,
+.employee-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+.employee-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.employee-form button:hover {
+    background-color: #45a049;
+}
+
+/* Add some spacing between form fields */
+.employee-form .form-group {
+    margin-bottom: 15px;
+}

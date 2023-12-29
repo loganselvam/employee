@@ -1,0 +1,31 @@
+/* Apply basic styling to the data container */
+div {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style the headings */
+div h1 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Style the data */
+div p {
+    margin: 0;
+    font-size: 16px;
+}
+a{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 10px;
+    text-decoration: none;
+    position: relative;
+    left: 35vw;
+}
